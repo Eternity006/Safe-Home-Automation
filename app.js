@@ -99,8 +99,8 @@ document.addEventListener("DOMContentLoaded", function () {
     lockLocked = !lockLocked;
     lockToggle.textContent = lockLocked ? "Lock" : "Unlock";
     lockIcon.querySelector("img").src = lockLocked
-      ? "lock-off.png"
-      : "lock-on.png";
+      ? "lock-on.png"
+      : "lock-off.png";
     checkTemperature();
   });
 
