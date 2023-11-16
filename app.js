@@ -165,8 +165,8 @@ document.addEventListener("DOMContentLoaded", function () {
         ? "light-on.png"
         : "light-off.png";
       lockIcon.querySelector("img").src = lockLocked
-        ? "lock-on.png"
-        : "lock-off.png";
+        ? "lock-off.png"
+        : "lock-on.png";
       tvIcon.querySelector("img").src = tvOn ? "tv-on.png" : "tv-off.png";
       microwaveIcon.querySelector("img").src = microwaveOn
         ? "microwave-on.png"
