@@ -99,8 +99,8 @@ document.addEventListener("DOMContentLoaded", function () {
     lockLocked = !lockLocked;
     lockToggle.textContent = lockLocked ? "Lock" : "Unlock";
     lockIcon.querySelector("img").src = lockLocked
-      ? "lock-on.png"
-      : "lock-off.png";
+      ? "lock-off.png"
+      : "lock-on.png";
     checkTemperature();
   });
 
@@ -150,7 +150,7 @@ document.addEventListener("DOMContentLoaded", function () {
       livingRoomTemperatureDisplay.textContent
     );
 
-    if (kitchenTemperature > 50 || livingRoomTemperature > 80) {
+    if (kitchenTemperature > 45 || livingRoomTemperature > 45) {
       // If temperature is above 80°C, turn off all devices and lock the door
       resetDevices();
     } else {
