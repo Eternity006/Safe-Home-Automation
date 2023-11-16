@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Safe Home Automation</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+
+<body>
+    <div id="loginContainer">
+        <h1>Login</h1>
+        <form id="loginForm">
+            <label for="username">Username:</label>
+            <input type="text" id="username" name="username" required>
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" required>
+            <p id="error-message" class="error-message"></p>
+            <button type="submit">Login</button>
+        </form>
+    </div>
+
+    <div id="homeContainer" style="display: none;">
+        <header>
+            <h1>Safe Home Automation</h1>
+        </header>
+        <main>
+            <!--<link rel="stylesheet" type="text/css" href="styles.css">
+            </head>
+            
+            <>
+                <header>
+                    <h1>Safe Home Automation</h1>
+                </header>
+                <>-->
+                    <div class="device" id="lightDevice">
+                        <h2>Smart Lights</h2>
+                        <button id="lightToggle">Turn On</button>
+                        <img id="lightImage" src="light-on.png" alt="Light On Image" width="50" height="50">
+                    </div>
+            
+            
+                    <div class="device" id="lockDevice">
+                        <h2>Smart Lock</h2>
+                        <button id="lockToggle">Lock</button>
+                        <img id="lockImage" src="lock-on.png" alt="Lock On Image" width="50" height="50">
+                    </div>
+            
+                    <div class="device" id="tvDevice">
+                        <h2>Smart TV</h2>
+                        <button id="tvToggle">Turn On</button>
+                        <img id="tvImage" src="tv-on.png" alt="TV On Image" width="50" height="50">
+                    </div>
+            
+            
+                    <div class="device" id="microwaveDevice">
+                        <h2>Microwave</h2>
+                        <button id="microwaveToggle">Turn On</button>
+                        <img id="microwaveImage" src="microwave-on.png" alt="Microwave On Image" width="50" height="50">
+                    </div>
+            
+            
+                    <div class="device" id="fanDevice">
+                        <h2>Fan</h2>
+                        <button id="fanToggle">Turn On</button>
+                        <img id="fanImage" src="fan-on.png" alt="Fan On Image" width="50" height="50">
+                    </div>
+            
+            
+                    <div class="device" id="kitchenTemperatureDevice">
+                        <h2>Kitchen Temperature</h2>
+                        <p id="kitchenTemperature">N/A</p>
+                    </div>
+            
+                    <div class="device" id="livingRoomTemperatureDevice">
+                        <h2>Living Room Temperature</h2>
+                        <p id="livingRoomTemperature">N/A</p>
+                    </div>
+            
+            
+                    <div class="house-blueprint" id="houseBlueprint">
+                        <!-- Light icon -->
+                        <div id="lightIcon">
+                            <img src="light-on.png" alt="Light Icon" width="50" height="50">
+                        </div>
+                        <!-- Lock icon -->
+                        <div id="lockIcon">
+                            <img src="lock-on.png" alt="Lock Icon" width="50" height="50">
+                        </div>
+                        <!-- TV icon -->
+                        <div id="tvIcon">
+                            <img src="tv-on.png" alt="TV Icon" width="50" height="50">
+                        </div>
+                        <!-- Microwave icon -->
+                        <div id="microwaveIcon">
+                            <img src="microwave-on.png" alt="Microwave Icon" width="50" height="50">
+                        </div>
+                        <!-- Fan icon -->
+                        <div id="fanIcon">
+                            <img src="fan-on.png" alt="Fan Icon" width="50" height="50">
+                        </div>
+                    </div>
+        </main>
+        <script src="app.js"></script>
+    </div>
+</body>
+
+</html>
